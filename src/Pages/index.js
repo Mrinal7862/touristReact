@@ -1,0 +1,8 @@
+export{default as Home} from './Home.jsx'
+export {default as Destination } from './Destination.jsx'
+export {default as About} from './About.jsx'
+export {default as Blog} from './Blog.jsx'
+export {default as Contact} from './Contact.jsx'
+export {default as Explore} from './Explore.jsx'
+export {default as SignIn} from './SignIn.jsx'
+export {default as SignUp} from './Signup.jsx'
