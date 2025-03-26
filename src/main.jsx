@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter,Navigate,RouterProvider } from 'react-router-dom'
-import {About, Blog, Contact, Destination, Home, Explore, SignIn, SignUp} from './Pages/index.js'
+import {About, Blog, Contact, Destination, Home, Explore, SignIn, SignUp, Profile} from './Pages/index.js'
 import {ClerkProvider}  from '@clerk/clerk-react'
 // import Signup from './Pages/Signup.jsx'
 
@@ -56,14 +56,13 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element:<SignUp/>
+      },
+      {
+        path: '/profile/:profileId', // profileId is a parameter
+        element:<Profile/>
       }
-      // {
-      //   path: "*",
-      //   element: <SignedOut><RedirectToSignIn/>
-
-      // }
-    ]
-  }
+    ],
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
